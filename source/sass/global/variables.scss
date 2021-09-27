@@ -1,0 +1,17 @@
+//Variables
+
+$color-gray: #e6e6e6;
+$color-light-gray: #f2f2f2;
+$color-more-gray: #d9d9d9;
+$color-special-dark-gray: #444444;
+$color-special-gray: #cdcdcd;
+$color-gray-bg: #eaeaea;
+$color-black: #000000;
+$color-white: #ffffff;
+$color-green: #68b738;
+
+//Mixins
+
+@mixin wrapper {
+  margin: 0 auto;
+}

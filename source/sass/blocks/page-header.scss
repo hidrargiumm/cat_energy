@@ -1,0 +1,41 @@
+.page-header {
+  margin: 0 auto;
+  width: 320px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-black;
+  border: 1px dashed gray;
+}
+
+.page-header__logo-wrapper {
+  padding-right: 90px;
+}
+
+.page-header__logo {
+  display: flex;
+  margin: 11px 0 21px 22px;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo__icon {
+  margin-right: 62px;
+  width: 33.32px;
+  height: 37.61px;
+}
+
+.logo__title {
+  width: 101px;
+  height: 19px;
+}

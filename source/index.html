@@ -4,24 +4,28 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: «Кэт энерджи»</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="logo__icon" src="img/logo.svg" width="33.32" height="37.61" alt="«Кэт энерджи»">
-      <img class="logo__title" src="img/logo-title.svg" width="101" height="18" alt="CAT ENERGY">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
+    <div class="page-header__wrapper">
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo logo" href="">
+          <img class="logo__icon" src="img/logo.svg" width="33.32" height="37.61" alt="«Кэт энерджи»">
+          <img class="logo__title" src="img/logo-title.svg" width="101" height="18" alt="CAT ENERGY">
+        </a>
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="site-list">
-          <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+          <li class="site-list__item site-list__item--active"><a href="">Главная</a></li>
           <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
           <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
   <main class="page-main">
     <section class="description">
@@ -102,18 +106,22 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__logo logo">
-        <img class="logo__img" src="img/logo-title.svg" alt="Логотип" >
+        <img class="logo__img" src="img/logo-title.svg" alt="Логотип">
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
-          <li class="social__item"><a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a></li>
-          <li class="social__item"><a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a></li>
-          <li class="social__item"><a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a></li>
+          <li class="social__item"><a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы
+              в Вконтакте</a></li>
+          <li class="social__item"><a class="social__link social__link--instagram"
+              href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a></li>
+          <li class="social__item"><a class="social__link social__link--facebook"
+              href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a></li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="" >HTML Academy</a>
-        <a href="" class="copyright__logo"><img src="img/Лого_html 1.svg" width="27" height="34" alt="Логотип HTML Academy"></a>
+        <a class="copyright__link" href="">HTML Academy</a>
+        <a href="" class="copyright__logo"><img src="img/Лого_html 1.svg" width="27" height="34"
+            alt="Логотип HTML Academy"></a>
       </div>
     </div>
   </footer>
