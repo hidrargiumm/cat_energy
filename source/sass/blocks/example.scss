@@ -1,0 +1,24 @@
+.example {
+  background-color: $color-gray-bg;
+}
+
+.example__wrapper {
+  @include wrapper;
+  padding-top: 27px;
+}
+
+.example__title {
+  @include title;
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.example__text {
+  @include text;
+}
+
+.example__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
