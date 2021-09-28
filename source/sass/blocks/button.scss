@@ -8,4 +8,14 @@
   text-align: center;
   text-transform: uppercase;
   background-color: $color-green;
+
+  &:hover,
+  &:focus {
+    background-color: $color-green-darken;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+    background-color: $color-green-darken;
+  }
 }

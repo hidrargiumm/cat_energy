@@ -1,5 +1,5 @@
 .page-header {
-  margin: 0 auto;
+  @include wrapper;
   width: 320px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 500;
@@ -7,7 +7,6 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $color-black;
-  border: 1px dashed gray;
 }
 
 .page-header__logo-wrapper {
