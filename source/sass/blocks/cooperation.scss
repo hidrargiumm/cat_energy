@@ -1,0 +1,21 @@
+.cooperation__wrapper {
+  @include wrapper;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 28px;
+  padding-bottom: 26px;
+}
+
+.cooperation__text {
+  @include title;
+  width: 140px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.cooperation__adress {
+  @include text;
+  margin: 0;
+  line-height: 20px;
+}

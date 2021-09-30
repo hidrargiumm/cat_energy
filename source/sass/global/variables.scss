@@ -25,6 +25,7 @@ $color-green-darken: #5eaa2f;
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
+  color: $color-black;
 }
 
 @mixin text {
@@ -33,4 +34,5 @@ $color-green-darken: #5eaa2f;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  color: $color-special-dark-gray;
 }
