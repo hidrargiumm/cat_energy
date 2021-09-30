@@ -32,10 +32,10 @@
     <section class="description">
       <div class="description__wrapper">
         <h2 class="description__title">Функциональное питание для котов</h1>
-        <p class="description__slogan">Занялся собой? Займись котом!</p>
-        <img class="description__img" src="img/index-can 1.png" width="280" height="270"
-          alt="Упаковка питания для котов">
-        <a class="description__button button" href="form.html">Подобрать программу</a>
+          <p class="description__slogan">Занялся собой? Займись котом!</p>
+          <img class="description__img" src="img/index-can 1.png" width="280" height="270"
+            alt="Упаковка питания для котов">
+          <a class="description__button button" href="form.html">Подобрать программу</a>
       </div>
     </section>
     <section class="programs">
@@ -78,17 +78,23 @@
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
           Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
           часов в день.</p>
-        <ul class="example__list">
-          <li class="example__item"><span>5 КГ</span>снижение веса</li>
-          <li class="example__item"><span>60 ДНЕЙ</span>затрачено времени</li>
-          <li class="example__item">Затраты на питание: 15 000 РУБ.</li>
-        </ul>
+        <div class="example__parameters">
+          <div class="example__list">
+            <p class="example__item">5 КГ<span>снижение веса</span></p>
+            <p class="example__item">60 ДНЕЙ<span>затрачено времени</span></p>
+          </div>
+          <p class="example__expenses">Затраты на питание: 15 000 РУБ.</p>
+        </div>
         <div class="example__interactive slider">
-          <img class="slider__img slider__img--before" src="img/before 1.png" alt="Было">
-          <img class="slider__img slider__img--after" src="img/after 1.png" alt="Стало">
+          <div class="slider__img-block">
+            <img class="slider__img slider__img--before" src="img/before 1.png" width="311" height="232" alt="Было">
+            <!-- <img class="slider__img slider__img--after" src="img/after 1.png" width="251" height="240" alt="Стало"> -->
+          </div>
           <div class="slider__controls">
             <span>Было</span>
-            <input class="slider__range" type="range" name="example__slider" id="example__slider">
+            <div class="slider__scale">
+              <div class="slider__bar"></div>
+            </div>
             <span>Стало</span>
           </div>
         </div>

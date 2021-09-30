@@ -5,6 +5,7 @@
 .example__wrapper {
   @include wrapper;
   padding-top: 27px;
+  padding-bottom: 35px;
 }
 
 .example__title {
@@ -15,10 +16,118 @@
 
 .example__text {
   @include text;
+  margin-bottom: 25px;
+}
+
+.example__parameters {
+  margin-bottom: 42px;
 }
 
 .example__list {
   margin: 0;
+  margin-bottom: 35px;
   padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example__item {
+  @include title;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 124px;
+  padding-top: 13px;
+  padding-bottom: 16px;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  border: 1px solid $color-special-gray;
+  border-radius: 5px;
+
+  span {
+    @include text;
+    position: absolute;
+    top: 46px;
+    width: 80px;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    text-transform: lowercase;
+    background-color: $color-gray-bg;
+  }
+}
+
+.example__expenses {
+  @include title;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__interactive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider__img-block {
+  position: relative;
+  margin-bottom: 25px;
+  width: 311px;
+  height: 240px;
+}
+
+.slider__img {
+  position: absolute;
+}
+
+.slider__img--before {
+  width: 311px;
+  height: 232px;
+  left: -4px;
+}
+
+.slider__img--after {
+  width: 251px;
+  height: 240px;
+  top: 2px;
+  left: 33px;
+}
+
+.slider__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 4px;
+  width: 200px;
+
+  span {
+    @include title;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}
+
+.slider__scale {
+  padding: 3px 5px;
+  width: 84px;
+  height: 14px;
+  background-color: $color-white;
+  border: 1px solid $color-special-gray;
+  border-radius: 10px;
+}
+
+.slider__bar {
+  width: 50%;
+  height: 6px;
+  background-color: $color-green;
+  border-radius: 10px;
 }
