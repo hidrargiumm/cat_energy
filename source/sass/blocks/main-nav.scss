@@ -1,21 +1,11 @@
 .main-nav {
   position: relative;
-
-  &::after {
-    content: " ";
-    position: absolute;
-    display: inline-block;
-    width: 320px;
-    height: 302px;
-    background: url("../../img/index-background-desktop 2.jpg") no-repeat;
-    z-index: -1;
-  }
 }
 
 .main-nav__toogle {
   position: absolute;
-  right: 21px;
-  top: -50px;
+  right: 22px;
+  top: -49px;
   height: 18px;
   width: 18px;
   font-size: 0;
@@ -23,9 +13,38 @@
   border: none;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toogle {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: -3px;
+    width: 2px;
+    height: 25px;
+    background-color: $color-black;
+    transform: rotate(-90deg);
+    box-shadow: 8px 0 0 0 $color-black,
+      -8px 0 0 0 $color-black;
+  }
+}
+
+.main-nav--opened .main-nav__toogle {
   &::after {
-    content: " ";
-    display: inline-block;
+    content: "";
     position: absolute;
     left: 8px;
     top: -3px;
@@ -36,8 +55,7 @@
   }
 
   &::before {
-    content: " ";
-    display: inline-block;
+    content: "";
     position: absolute;
     left: 8px;
     top: -3px;
@@ -48,6 +66,10 @@
   }
 }
 
+.main-nav--closed .site-list {
+  display: none;
+}
+
 .site-list {
   margin: 0;
   padding: 0;
@@ -55,6 +77,10 @@
   flex-direction: column;
   align-items: center;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .site-list__item {
@@ -63,10 +89,10 @@
   align-items: center;
   height: 65px;
   width: 100%;
-  border-top: 2px solid $color-gray;
+  border-top: 1px solid $color-gray;
 
   &:last-child {
-    border-bottom: 2px solid $color-gray;
+    border-bottom: 1px solid $color-gray;
   }
 
   a {

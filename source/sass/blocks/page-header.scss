@@ -1,21 +1,31 @@
 .page-header {
   @include wrapper;
-  width: 320px;
+  min-width: 320px;
+  padding-left: 0;
+  padding-right: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
   color: $color-black;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .page-header__logo-wrapper {
-  padding-right: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 100px;
 }
 
 .page-header__logo {
   display: flex;
-  margin: 11px 0 21px 22px;
+  margin: 12px 0 20px 0;
   align-items: center;
 
   &:hover,
@@ -30,7 +40,7 @@
 
 .logo__icon {
   margin-right: 62px;
-  width: 33.32px;
+  width: 35px;
   height: 37.61px;
 }
 

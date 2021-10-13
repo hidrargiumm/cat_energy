@@ -5,18 +5,28 @@ $color-light-gray: #f2f2f2;
 $color-more-gray: #d9d9d9;
 $color-special-dark-gray: #444444;
 $color-special-gray: #cdcdcd;
+$color-special-gray-2: #ebebeb;
 $color-gray-bg: #eaeaea;
 $color-black: #000000;
 $color-white: #ffffff;
 $color-green: #68b738;
 $color-green-darken: #5eaa2f;
 
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
 
 //Mixins
 
 @mixin wrapper {
   margin: 0 auto;
-  width: 280px;
+  min-width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
 }
 
 @mixin title {
