@@ -66,10 +66,15 @@
   }
 }
 
+.main-nav--nojs .main-nav__toogle {
+  display: none;
+}
+
 .main-nav--closed .site-list {
   display: none;
 }
 
+.main-nav--nojs .site-list,
 .site-list {
   margin: 0;
   padding: 0;
