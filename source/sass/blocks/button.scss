@@ -9,6 +9,11 @@
   text-transform: uppercase;
   background-color: $color-green;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 54px;
+  }
+
   &:hover,
   &:focus {
     background-color: $color-green-darken;

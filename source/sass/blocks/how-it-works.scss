@@ -4,11 +4,16 @@
 
 .how-it-works__wrapper {
   @include wrapper;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+  }
 }
 
 .how-it-works__title {
   @include title;
   margin: 25px 0 40px;
+  font-size: 60px;
 }
 
 .how-it-works__list {
@@ -17,6 +22,16 @@
   display: flex;
   flex-direction: column;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 44px;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
 }
 
 .how-it-works__item {
@@ -37,19 +52,19 @@
   }
 
   &--1::before {
-    background: url("../../img/item_1.jpg");
+    background: url("../../img/how-it-works/mobile/item_1.jpg");
   }
 
   &--2::before {
-    background: url("../../img/item_2.jpg");
+    background: url("../../img/how-it-works/mobile/item_2.jpg");
   }
 
   &--3::before {
-    background: url("../../img/item_3.jpg");
+    background: url("../../img/how-it-works/mobile/item_3.jpg");
   }
 
   &--4::before {
-    background: url("../../img/item_4.jpg");
+    background: url("../../img/how-it-works/mobile/item_4.jpg");
   }
 }
 
