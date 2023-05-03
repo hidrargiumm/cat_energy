@@ -1,0 +1,53 @@
+//Variables
+
+$color-gray: #e6e6e6;
+$color-light-gray: #f2f2f2;
+$color-more-gray: #d9d9d9;
+$color-special-dark-gray: #444444;
+$color-special-gray: #cdcdcd;
+$color-special-gray-2: #ebebeb;
+$color-gray-bg: #eaeaea;
+$color-black: #000000;
+$color-white: #ffffff;
+$color-green: #68b738;
+$color-green-darken: #5eaa2f;
+
+$mobile-width-only: 767px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
+
+//Mixins
+
+@mixin wrapper {
+  margin: 0 auto;
+  min-width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    min-width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: $desktop-width;
+  }
+}
+
+@mixin title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: $color-black;
+}
+
+@mixin text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-special-dark-gray;
+}

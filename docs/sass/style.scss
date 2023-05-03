@@ -1,0 +1,24 @@
+//Global
+
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/fonts.scss";
+
+//Blocks
+
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-main.scss";
+@import "blocks/description.scss";
+@import "blocks/button.scss";
+@import "blocks/programs.scss";
+@import "blocks/how-it-works.scss";
+@import "blocks/example.scss";
+@import "blocks/cooperation.scss";
+@import "blocks/map.scss";
+@import "blocks/page-footer.scss";
+
+//catalog
+
+@import "blocks/catalog.scss";

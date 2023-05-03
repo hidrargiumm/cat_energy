@@ -1,0 +1,26 @@
+.button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 40px;
+  color: $color-white;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $color-green;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 54px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-green-darken;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+    background-color: $color-green-darken;
+  }
+}

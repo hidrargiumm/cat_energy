@@ -1,0 +1,73 @@
+.how-it-works {
+  margin-bottom: 40px;
+}
+
+.how-it-works__wrapper {
+  @include wrapper;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+  }
+}
+
+.how-it-works__title {
+  @include title;
+  margin: 25px 0 40px;
+  font-size: 60px;
+}
+
+.how-it-works__list {
+  margin: 0;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 44px;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+}
+
+.how-it-works__item {
+  @include text;
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  padding-bottom: 3px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -2px;
+    left: -80px;
+  }
+
+  &--1::before {
+    background: url("../../img/how-it-works/mobile/item_1.jpg");
+  }
+
+  &--2::before {
+    background: url("../../img/how-it-works/mobile/item_2.jpg");
+  }
+
+  &--3::before {
+    background: url("../../img/how-it-works/mobile/item_3.jpg");
+  }
+
+  &--4::before {
+    background: url("../../img/how-it-works/mobile/item_4.jpg");
+  }
+}
+
+.how-it-works__item:not(:last-child) {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,140 @@
+.main-nav {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    max-width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 480px;
+  }
+}
+
+.main-nav__toogle {
+  position: absolute;
+  right: 22px;
+  top: -49px;
+  height: 18px;
+  width: 18px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toogle {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: -3px;
+    width: 2px;
+    height: 25px;
+    background-color: $color-black;
+    transform: rotate(-90deg);
+    box-shadow: 8px 0 0 0 $color-black,
+      -8px 0 0 0 $color-black;
+  }
+}
+
+.main-nav--opened .main-nav__toogle {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: -3px;
+    width: 2px;
+    height: 25px;
+    background-color: $color-black;
+    transform: rotate(44deg);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: -3px;
+    width: 2px;
+    height: 25px;
+    background-color: $color-black;
+    transform: rotate(-44deg);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--nojs .main-nav__toogle {
+    display: none;
+  }
+
+  .main-nav--closed .site-list {
+    display: none;
+  }
+}
+
+.main-nav--nojs .site-list,
+.site-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 479px;
+  }
+}
+
+.site-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    border-top: 1px solid $color-gray;
+
+    &:last-child {
+      border-bottom: 1px solid $color-gray;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
+
+  a {
+    color: $color-black;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
